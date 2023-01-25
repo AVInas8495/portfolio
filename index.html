@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/60c6decc67.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+ 
+<div class="nav-pad">
+    <nav>
+        <div class="name">Avinash Kumar Pal</div>
+        <div class="list">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+    </div>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+</div>
+    
+<div id="header">
+<div class="row">
+    <div class="text-zone">
+        <h1>Hi all,<br>
+            <span>I</span>
+            <span>am</span>
+            <span>Avinash</span>
+            <br>
+            <span>From</span>
+            <span>Lucknow</span>
+        </h1>
+        <p>A Innovative, task-driven Front-End Developer 🚀 having an experience of building Web applications with JavaScript / Angularjs /some other cool libraries and frameworks.</p>
+        <br>
+        <h4 class="expert">Web Developer/Angular Framework</h4>
+    </div>
+    <div class="image">
+        <img src="images/hello.png">
+    </div>
+</div>
+
+
+
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/black1.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="textclr">Since beginning my journey as a Software Development Trainee nearly 1 year ago, I've done  work in Codemaya Company and collaborated with talented people. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
+
+                    <p class="textclr">I'm very ambitious front-end developer looking for a role in established IT company with the opportunity to work with the latest technologies on challenging and diverse projects.</p>
+                    
+                <div class="tab-titles">
+                   <p class="tab-links active-links" onclick="openTab('skills')">Skills</p>
+                   <p class="tab-links " onclick="openTab('experience')">Experience</p>
+                   <p class="tab-links " onclick="openTab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <div class="images1">
+                   <img class="imgSize" src="images/html5.png">
+                   <img class="imgSize" src="images/css3.png">
+                   <img class="imgSize" src="images/sass.png">
+                   <img class="imgSize" src="images/tailwindcss.png">
+                   <img class="imgSize" src="images/bootstrap.png">
+                   <img class="imgSize" src="images/javascript.png">
+                   <img class="imgSize" src="images/angularjs.png">
+                </div>
+                </div>
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>Feb 2022 - Present</span> <br>Codemaya,Front End Developer</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>2017-2021</span> <br>SRM Institute of Science And Technology, Delhi,Ncr Campus</li>
+                            <li><span>2014-2016</span> <br>New Public School - Std. 12th, Indian School Certificate (ISC),</li>
+                            <!-- <li><span>Web Development</span> <br>Web App Development</li> -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI Development</h2>
+                <p>In UI I used the Figma,Sketch,Zeplin design for the website Development.I use ngBootstrap,NgbDropdown etc.Use of third party libraries such as Quill Editor,RxJs etc</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-angular"></i>
+                <h2>Angular Framework</h2>
+                <p>Currently I am working on web development on Angukar framework.In this we make four components at a time i.e, Html,Sass,Typescipt,Spect Files.</p>
+                <a href="https://angular.io/">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I have been working on Html,Sass,Css,JavaScript,Angular Framework to develop the whole websites.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn">Learn More</a>
+            </div>
+          
+        </div> 
+    </div>
+ </div>
+
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/search.png">
+                <div class="layer">
+                    <h3>Wikipedia Search Engine Web App</h3>
+                    <p>Search Section where users can search anything. As
+                        the user enters anything in that search box, call the wikipedia api and populate
+                        a list of search results in that page.Store the favorited items into the ngRx state
+                        (dispatch an action and store the items into ngRx store).Populate the list of favorite
+                        items in the Home page (from the ngRx store).</p>
+                    <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/shopping.png">
+                <div class="layer">
+                    <h3>Flipkart Clone</h3>
+                    <p>Made an E-Commerce Web application just like Flipkart
+                        in which user can save product items and delete also.Afer selecting item it also
+                        produces grand total.</p>
+                    <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ToDoList.png">
+                <div class="layer">
+                    <h3>To Do List</h3>
+                    <p>Make a todo list using angular FrameWork in which we edit and delete button which coming from the JSOn server where user edit or delete from the todo list.</p>
+                    <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btn">See more </a>  -->
+</div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p class="ptxt"><i class="fa-sharp fa-solid fa-paper-plane"></i>kumarpallko@gmail.com</p>
+                <p class="ptxt"><i class="fa-solid fa-square-phone"></i>9140005819</p>
+                <p class="ptxt"><i class="fa-solid fa-house-user"></i>548/100 Devpur Post,Rajajipuram,Lucknow.</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/avinash-kumar-pal-13bb301b4/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/avinash63650089?s=08"><i class="fa-brands fa-twitter"></i></a>
+                    <!-- <a href=""><i class="fa-brands fa-github"></i> </a> -->
+                    <a href="https://www.naukri.com/mnjuser/profile?id=&altresid"><i class="fa-solid fa-n"></i></a> 
+                </div>
+                <a href="images/A_k_p.cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button class="btn btn2" type="submit">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function openTab(tabname){
+for(tablink of tablinks){
+    tablink.classList.remove("active-links");
+}
+for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-links");
+document.getElementById(tabname).classList.add("active-tab");
+
+} 
+</script>
+
+<script>
+
+var sidemenu = document.getElementById("sidemenu")
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz4zkvVigxmjZ3Q3DRqeSLWgQt0XXrjywEOJEYpeuzAQ2CmyZRt6NlO-3rUmHj59-Hl/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
